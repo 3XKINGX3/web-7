@@ -11,8 +11,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $login = $_POST['login'] ?? '';
     $pass = $_POST['password'] ?? '';
 
-    $db_user = 'u82373';
-    $db_pass = '4362231';
+    $db_user = '';
+    $db_pass = '';
     $pdo = new PDO('mysql:host=localhost;dbname=u82373;charset=utf8', $db_user, $db_pass);
 
     $stmt = $pdo->prepare("SELECT id, password_hash FROM applications WHERE login = ?");
