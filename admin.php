@@ -5,8 +5,8 @@ if (isset($_SERVER['REDIRECT_HTTP_AUTHORIZATION'])) {
     $_SERVER['PHP_AUTH_PW'] = $auth_data[1];
 }
 
-$db_user = 'u82373';
-$db_pass = '4362231';
+$db_user = '';
+$db_pass = '';
 $pdo = new PDO('mysql:host=localhost;dbname=u82373;charset=utf8', $db_user, $db_pass, [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
